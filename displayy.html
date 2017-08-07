@@ -1,0 +1,81 @@
+  <!doctype html>
+    <html lang="en">
+	
+    <head>
+	<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+<style>
+table {
+    border-collapse: collapse;
+    width: 85%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+th:nth-child(even){background-color: black; color:white;}
+th:nth-child(odd){background-color: black; color:white;}
+tr:nth-child(even){background-color: #f2f2f2}
+
+button {background-color: black; color:white;height:60px;width:200px;font-size: 200%;}
+</style>
+      <meta charset="UTF-8">
+      <title>EGS</title>
+    </head>
+    <body>
+      <?php
+include('configa.php');
+
+      //execute the SQL query and return records
+    $result=mysqli_query($conn,$q);
+      ?>
+	  <center>
+      <table class="rwd-table" >
+	  <br><br>
+      <thead>
+        <tr>
+          <th>Employee_id</th>
+          <th>Employee_Name</th>
+          <th>Employee_doj</th>
+          <th>Target_Provided</th>
+          <th>Target_achieved</th>
+          <th>Percentage</th>
+		  <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <?php
+          if(  mysqli_num_rows($result) > 0 ){
+        while($row= mysqli_fetch_assoc( $result ))
+          {
+            echo
+            "
+            <tr>
+              <td>{$row['id']}</td>
+              <td>{$row['name']}</td>
+              <td>{$row['date']}</td>
+              <td>{$row['Tpr']}</td>
+              <td>{$row['Tach']}</td>
+              <td>{$row['percentage']}&nbsp;%</td>
+              <td>{$row['grade']}</td>
+            
+            </tr>\n";
+          } 
+        }
+        else
+        {
+        echo "<script>alert('No records available');</script>";
+          
+          }
+        ?>
+      </tbody>
+    </table>
+	</center>
+	
+ <br><br><center><button class="button button2" onclick=window.open("/e/logged.html","_self")>Go Back</button><center>
+	<?php mysqli_close($conn);?>
+
+    </body>
+    </html>

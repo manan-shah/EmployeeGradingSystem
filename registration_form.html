@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+	<script>
+document.addEventListener('contextmenu', event => event.preventDefault());
+</script>
+        <title>REGISTRATION</title>
+         <style>
+
+body {
+  background: #333438; /* fallback for old browsers */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+   color:#dcdde2;
+   font-size: 20px;
+   margin-top: 1.25cm;
+}
+
+.button {
+  display: inline-block;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  margin: 1px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 24px;
+    margin: 4px 2px;
+	 width: 400px;;
+	 border:none;
+}
+
+input[type=text],[type=password],[type=number],[type=email] {
+    padding: 16px 32px;
+    margin: 4px 2px;
+}
+
+j{
+font-size: 30px;
+}
+
+h1{
+font-size: 40px;
+}
+hr{
+width:50%;
+}
+k{
+font-size: 20px;
+}
+
+
+
+
+    </style>
+    </head>
+   <body  alink="orange" vlink="yellow">
+	<center><h1>REGISTRATION FORM<h1></center>
+<center>
+        <form action="registration.php" method="POST"><br>
+            Name :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" name="name"/><br>
+            Age :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="number" name="age" min="18"/><br>
+            Gender : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other<br/>
+            Email ID : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="email" name="email"/><br>
+            Username : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="text" name="username"/><br>
+            Password : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input type="password" name="password1"/><br>
+            Re-enter password : &nbsp;&nbsp;<input type="password" name="password2"/><br>
+			<br/>
+            <input type="submit" value="Submit"/><BR/>
+			<a href="index.html">GO BACK</a>
+        </form>
+		</center>
+    </body>
+</html>

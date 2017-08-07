@@ -1,0 +1,56 @@
+<style>
+
+body {
+  background: #333438; /* fallback for old browsers */
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+   color:#dcdde2;
+   font-size: 20px;
+   margin-top: 1.25cm;
+}
+
+.button {
+  display: inline-block;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 15px;
+  width: 200px;
+  transition: all 0.5s;
+  margin: 1px;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 24px;
+    margin: 4px 2px;
+	 width: 400px;;
+	 border:none;
+}
+
+input[type=text],[type=password],[type=number],[type=email],[type=date] {
+    padding: 16px 32px;
+    margin: 4px 2px;
+}
+
+j{
+font-size: 30px;
+}
+
+h1{
+font-size: 40px;
+}
+hr{
+width:50%;
+}
+k{
+font-size: 20px;
+}
+
+
+
+
+    </style>
