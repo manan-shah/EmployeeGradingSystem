@@ -1,5 +1,7 @@
 # EmployeeGradingSystem
+EGS V1.0
 MU Third year mini project
+>>>>>> Implemented using HTML, CSS, PHP.
 
 Table of Contents
 1.	Introduction
