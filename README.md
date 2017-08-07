@@ -9,6 +9,7 @@ MU Third year mini project
 
 Table of Contents
 1.	Introduction
+
 1.1	Purpose
 1.2	Intended Audience & Reading Suggestions
 1.3	Product Scope
