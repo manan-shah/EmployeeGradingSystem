@@ -1,6 +1,11 @@
 # EmployeeGradingSystem
 EGS V1.0
 MU Third year mini project
+>>>>>> 
+Databases included (import the 2 .sql files)
+>>>>>>>>
+copy all items in folder named "e" to htdocs.
+
 >>>>>> Implemented using HTML, CSS, PHP.
 
 Table of Contents
